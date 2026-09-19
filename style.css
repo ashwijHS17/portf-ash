@@ -654,6 +654,32 @@ body::before {
 =========================== */
 .projects { background: var(--bg2); }
 
+.project-category-header {
+  margin: 52px 0 24px;
+}
+
+.project-category-header:first-of-type {
+  margin-top: 0;
+}
+
+.category-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--teal);
+  background: rgba(0,188,212,0.07);
+  border: 1px solid rgba(0,188,212,0.2);
+  border-left: 3px solid var(--teal);
+  padding: 10px 20px 10px 16px;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+}
+
+.category-label i {
+  font-size: 14px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
