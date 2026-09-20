@@ -390,10 +390,11 @@
             </div>
           </div>
           <h3 class="project-title">Automated News Notifier</h3>
-          <p class="project-subtitle">n8n Workflow Automation</p>
-          <p class="project-desc">End-to-end automated n8n workflow that extracts live data from news blogs and automatically triggers formatted email notifications — eliminating manual monitoring entirely.</p>
+          <p class="project-subtitle">n8n · Groq LLM · AI Workflow Automation</p>
+          <button class="preview-btn" onclick="openPreview()"><i class="fas fa-image"></i> View Workflow</button>
+          <p class="project-desc">AI-powered n8n workflow that runs daily at 9 AM — searches Google News, filters the top 5 articles, passes them through a Groq LLM chain to generate summaries, formats them as styled HTML, and auto-sends them via Gmail. Zero manual effort.</p>
           <div class="project-tech">
-            <span>n8n</span><span>API Integration</span><span>Email Automation</span>
+            <span>n8n</span><span>Groq LLM</span><span>Google News API</span><span>LLM Chain</span><span>Gmail API</span><span>HTML Templating</span>
           </div>
         </div>
 
@@ -629,6 +630,14 @@
       <p class="footer-sub">Aspiring Software Engineer · Mangalore, Karnataka</p>
     </div>
   </footer>
+
+  <!-- Image Preview Modal -->
+  <div id="imgModal" class="img-modal" onclick="closePreview()">
+    <div class="img-modal-content" onclick="event.stopPropagation()">
+      <button class="img-modal-close" onclick="closePreview()"><i class="fas fa-times"></i></button>
+      <img src="n8n-workflow.png.png" alt="n8n AI News Automation Workflow" />
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

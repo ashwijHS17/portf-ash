@@ -367,3 +367,20 @@ const sectionTagObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.8 });
 
 document.querySelectorAll('.section-tag').forEach(t => sectionTagObserver.observe(t));
+
+// ===========================
+// IMAGE PREVIEW MODAL
+// ===========================
+function openPreview() {
+  document.getElementById('imgModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePreview() {
+  document.getElementById('imgModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePreview();
+});
